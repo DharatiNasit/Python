@@ -1,0 +1,33 @@
+<style>
+
+	body{
+		
+		background-color:#BC8F8F;
+	}
+
+</style>
+<body>
+<?php
+
+	$person = $_POST['person'];
+	$empnum = $_POST['empnum'];
+	$empfname = $_POST['empfname'];
+	$familynam = $_POST['familynam'];
+	$empadd = $_POST['empadd'];
+	$empemail = $_POST['empemail'];
+	$empmob = $_POST['empmob'];
+	
+	$fp = fopen("data13.txt",'a');
+	fwrite ($fp, $person);
+	fwrite ($fp, $empnum);
+	fwrite ($fp, $empfname);
+	fwrite ($fp, $familynam);
+	fwrite ($fp, $empadd);
+	fwrite ($fp, $empemail);
+	fwrite ($fp, $empmob);
+	?>
+	
+	
+	</body>
+	
+
